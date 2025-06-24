@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Hotspot Map - Andhra Pradesh</title>
+    <!-- External CSS and Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <header>
+                <h2>Crime Analysis</h2>
+                <p>Andhra Pradesh</p>
+            </header>
+
+            <div class="filters">
+                <h3>Filters</h3>
+                <label for="timePeriod">Time Period:</label>
+                <select id="timePeriod">
+                    <option value="last24h">Last 24 Hours</option>
+                    <option value="last7d" selected>Last 7 Days</option>
+                    <option value="last30d">Last 30 Days</option>
+                </select>
+
+                <label for="crimeType">Crime Type:</label>
+                <select id="crimeType">
+                    <option value="all">All Types</option>
+                    <option value="Theft">Theft</option>
+                    <option value="Assault">Assault</option>
+                    <option value="Domestic Violence">Domestic Violence</option>
+                    <option value="Land Dispute">Land Dispute</option>
+                    <option value="Vandalism">Vandalism</option>
+                </select>
+            </div>
+
+            <div id="stats-container" class="stats">
+                <h3>Statistics</h3>
+                <p><strong>Total Incidents:</strong> <span id="totalIncidents">--</span></p>
+                <p><strong>Top Hotspot:</strong> <span id="topHotspot">--</span></p>
+            </div>
+
+            <div class="hotspots">
+                <h3>Top 3 Hotspots</h3>
+                <ul id="hotspots-list">
+                    <li>Loading...</li>
+                </ul>
+            </div>
+             <footer>
+                <p>Dial 112 Prototype</p>
+            </footer>
+
+            <div class="hotspots">
+                <h3>Top 3 Hotspots</h3>
+                <ul id="hotspots-list">
+                    <li>Loading...</li>
+                </ul>
+            </div>
+
+            <!-- ========= ADD THIS NEW SECTION START ========= -->
+            <div class="forecast">
+                <h3>Future Hotspot Forecast</h3>
+                <ul id="forecast-list">
+                    <li>Generating forecast...</li>
+                </ul>
+            </div>
+            <!-- ========= ADD THIS NEW SECTION END ========= -->
+
+             <footer>
+                <p>Dial 112 Prototype</p>
+            </footer>
+
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <!-- External JS and Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+    <!-- Our custom map logic -->
+    <script src="js/map.js"></script>
+</body>
+</html>
