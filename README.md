@@ -14,7 +14,8 @@ An AI based visualizer cum prediction of crime hotspots.
 This project is a rapid prototype of a crime analysis and early warning system, inspired by the objective to process Dial 112 data for law enforcement in Andhra Pradesh. It provides a web-based dashboard that visualizes crime incidents on an interactive map, analyzes their severity using basic AI, and generates a simple predictive forecast for future hotspots.
 
 
-*(Feel free to replace this with your own screenshot!)*
+![screenshot](https://github.com/user-attachments/assets/916d0114-970f-44b6-98c3-b0dcd76843f3)
+
 
 ---
 
